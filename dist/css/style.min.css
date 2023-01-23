@@ -196,7 +196,7 @@ img {
   display: flex;
   gap: 80px;
   padding-top: 100px;
-  margin-bottom: 65vh;
+  margin-bottom: 72vh;
 }
 .info__top-text {
   padding-top: 245px;
@@ -218,6 +218,38 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.info__specs {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+  color: var(--font-color2);
+  padding-bottom: 50px;
+}
+.info__specs-title {
+  text-transform: uppercase;
+  line-height: 67px;
+  font-size: 60px;
+  font-family: "Comfortaa", cursive;
+  width: 250px;
+}
+.info__specs-list {
+  border-top: 1px solid var(--font-color2);
+  border-bottom: 1px solid var(--font-color2);
+  padding: 30px 0;
+  width: 565px;
+  font-weight: 700;
+}
+.info__specs-item {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 25px;
+}
+.info__specs-item:last-child {
+  margin-bottom: 0px;
+}
+.info__specs-caption {
+  width: 185px;
 }
 
 .popup-btn {
