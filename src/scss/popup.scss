@@ -1,0 +1,12 @@
+.popup-btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    & span {
+        padding-top: 12px;
+        display: block;
+        color: var(--font-color2);
+    }
+}
