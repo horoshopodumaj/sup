@@ -3,6 +3,8 @@
 @import "logo";
 @import "info";
 @import "popup";
+@import "buy";
+
 .container {
     max-width: 1230px;
     padding: 0 15px;
@@ -43,4 +45,8 @@
 
 .info {
     background-image: url("@img/info_bg.jpg");
+}
+
+.buy__price {
+    background-image: url("@img/star.svg");
 }
