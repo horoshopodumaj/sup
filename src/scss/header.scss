@@ -2,6 +2,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-position: center;
+    position: relative;
+
     &__top {
         display: flex;
         align-items: center;
@@ -25,5 +28,63 @@
 
     &__content {
         min-height: calc(100vh - 161px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        &-box {
+            max-width: 550px;
+            text-align: center;
+            margin-right: 30px;
+            color: var(--font-color2);
+            font-family: "Comfortaa", cursive;
+            font-weight: 700;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 64px;
+        line-height: 71px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    &__decor-text {
+        position: absolute;
+        bottom: 10px;
+        color: var(--hover-color);
+        &--one,
+        &--two {
+            font-family: "Comfortaa", cursive;
+            font-size: 130px;
+            line-height: 145px;
+            opacity: 0.3;
+        }
+        &--one {
+            z-index: 1;
+            right: 145px;
+            bottom: 100px;
+        }
+        &--two {
+            z-index: 4;
+            left: 265px;
+            bottom: -10px;
+        }
+        &--three {
+            max-width: 360px;
+            right: 145px;
+            z-index: 4;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
     }
 }

@@ -10,4 +10,32 @@
 
 .header {
     background-image: url("@img/header_bg.jpg");
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("@img/header_decor.svg");
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 456px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateY(42%);
+        z-index: 2;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("@img/header_decor.svg");
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 456px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateY(88%) rotate(180deg);
+        z-index: 3;
+    }
 }
