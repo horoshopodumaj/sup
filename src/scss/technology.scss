@@ -1,0 +1,42 @@
+.technology {
+    margin-bottom: 150px;
+    &__top {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &-inner {
+            position: relative;
+            min-height: 110vh;
+        }
+
+        &-box {
+            position: absolute;
+            left: 0;
+            bottom: 70px;
+        }
+    }
+
+    &__btn {
+        right: 350px;
+        top: 50vh;
+    }
+
+    &__title {
+        max-width: 470px;
+        margin-bottom: 62px;
+    }
+
+    &__list {
+        //list-style-position: inside;
+        padding-left: 20px;
+
+        &-item {
+            padding-left: 24px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+    }
+}

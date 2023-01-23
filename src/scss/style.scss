@@ -4,6 +4,7 @@
 @import "info";
 @import "popup";
 @import "buy";
+@import "technology";
 
 .container {
     max-width: 1230px;
@@ -49,4 +50,15 @@
 
 .buy__price {
     background-image: url("@img/star.svg");
+}
+
+.technology__top {
+    background-image: url("@img/technology.png");
+}
+.title {
+    font-size: 60px;
+    line-height: 67px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Comfortaa", cursive;
 }

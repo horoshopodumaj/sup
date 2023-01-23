@@ -216,7 +216,6 @@ img {
   z-index: 6;
 }
 .info__btn {
-  position: absolute;
   bottom: 0;
   right: 0;
 }
@@ -228,10 +227,6 @@ img {
   padding-bottom: 50px;
 }
 .info__specs-title {
-  text-transform: uppercase;
-  line-height: 67px;
-  font-size: 60px;
-  font-family: "Comfortaa", cursive;
   width: 250px;
 }
 .info__specs-list {
@@ -258,6 +253,7 @@ img {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  position: absolute;
 }
 .popup-btn span {
   padding-top: 12px;
@@ -266,7 +262,7 @@ img {
 }
 
 .buy {
-  padding: 150px 0;
+  padding: 150px 0 0;
 }
 .buy__inner {
   display: flex;
@@ -278,11 +274,7 @@ img {
   position: relative;
 }
 .buy__title {
-  font-family: "Comfortaa", cursive;
-  text-transform: uppercase;
   margin-bottom: 50px;
-  font-size: 60px;
-  line-height: 67px;
   color: var(--hover-color);
 }
 .buy__list {
@@ -341,6 +333,42 @@ img {
   cursor: pointer;
 }
 
+.technology {
+  margin-bottom: 150px;
+}
+.technology__top {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.technology__top-inner {
+  position: relative;
+  min-height: 110vh;
+}
+.technology__top-box {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+}
+.technology__btn {
+  right: 350px;
+  top: 50vh;
+}
+.technology__title {
+  max-width: 470px;
+  margin-bottom: 62px;
+}
+.technology__list {
+  padding-left: 20px;
+}
+.technology__list-item {
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -385,4 +413,16 @@ img {
 
 .buy__price {
   background-image: url("../img/star.svg");
+}
+
+.technology__top {
+  background-image: url("../img/technology.png");
+}
+
+.title {
+  font-size: 60px;
+  line-height: 67px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
 }

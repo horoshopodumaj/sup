@@ -1,5 +1,5 @@
 .buy {
-    padding: 150px 0;
+    padding: 150px 0 0;
     &__inner {
         display: flex;
         align-items: center;
@@ -12,11 +12,7 @@
     }
 
     &__title {
-        font-family: "Comfortaa", cursive;
-        text-transform: uppercase;
         margin-bottom: 50px;
-        font-size: 60px;
-        line-height: 67px;
         color: var(--hover-color);
     }
 
