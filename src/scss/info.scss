@@ -21,11 +21,18 @@
         gap: 80px;
         padding-top: 100px;
         margin-bottom: 72vh;
+        @media (max-width: 1000px) {
+            display: block;
+            margin-bottom: 10vh;
+        }
         &-text {
             padding-top: 245px;
             width: 290px;
             color: var(--font-color2);
             position: relative;
+            @media (max-width: 1000px) {
+                width: 100%;
+            }
 
             &--one {
                 padding-bottom: 125px;
@@ -33,11 +40,19 @@
 
             &--two {
                 border-bottom: 1px solid var(--font-color2);
+                @media (max-width: 1000px) {
+                    padding-bottom: 25px;
+                    padding-top: 45px;
+                }
             }
         }
         &-img {
             position: relative;
             z-index: 6;
+            @media (max-width: 1000px) {
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
 
@@ -52,6 +67,9 @@
         gap: 130px;
         color: var(--font-color2);
         padding-bottom: 50px;
+        @media (max-width: 1000px) {
+            display: block;
+        }
         &-title {
             width: 250px;
         }
@@ -61,11 +79,17 @@
             padding: 30px 0;
             width: 565px;
             font-weight: 700;
+            @media (max-width: 630px) {
+                width: 100%;
+            }
         }
         &-item {
             margin-bottom: 15px;
             display: flex;
             gap: 25px;
+            @media (max-width: 630px) {
+                display: block;
+            }
             &:last-child {
                 margin-bottom: 0px;
             }
