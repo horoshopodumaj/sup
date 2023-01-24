@@ -83,6 +83,9 @@ img {
      object-fit: cover;
 }
 
+.no-webp .header {
+  background-image: url("@img/header_bg.jpg"); }
+
 .header {
   background-size: cover;
   background-repeat: no-repeat;
@@ -716,9 +719,6 @@ img {
   margin: 0 auto;
 }
 
-.no-webp .header {
-  background-image: url("../img/header_bg.jpg"); }
-
 .header::before {
   content: "";
   position: absolute;
@@ -1068,7 +1068,7 @@ img {
   }
 }
 
-.webp .header { background-image: url(../img/header_bg.webp); }
+.webp .header { background-image: url(@img/header_bg.webp); }
 
 .webp .info { background-image: url(../img/info_bg.webp); }
 
