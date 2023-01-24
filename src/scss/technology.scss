@@ -1,5 +1,8 @@
 .technology {
     margin-bottom: 150px;
+    @media (max-width: 1000px) {
+        margin-bottom: 50px;
+    }
     &__top {
         background-repeat: no-repeat;
         background-position: center;
