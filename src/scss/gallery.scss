@@ -1,0 +1,41 @@
+.gallery {
+    &__box {
+        display: flex;
+        gap: 68px;
+        margin-top: 115px;
+    }
+
+    &__text {
+        width: 350px;
+    }
+
+    &-min {
+        display: grid;
+        gap: 30px 24px;
+        grid-template-columns: 481px 208px;
+        grid-template-rows: 432px 300px;
+        transform: translateY(-50%);
+        position: relative;
+        padding: 72px 31px 52px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border: 3px solid var(--font-color);
+            border-radius: 200px 0px 300px;
+            z-index: 5;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+
+        &__img--1 {
+            grid-column: 1/3;
+            border-radius: 400px 0px 0px 0px;
+        }
+        &__img--2 {
+            border-radius: 0px 0px 0px 300px;
+        }
+    }
+}
