@@ -63,4 +63,8 @@
     font-weight: 400;
     text-transform: uppercase;
     font-family: "Comfortaa", cursive;
+    @media (max-width: 630px) {
+        font-size: 48px;
+        line-height: 56px;
+    }
 }

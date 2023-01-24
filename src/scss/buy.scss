@@ -4,11 +4,18 @@
         display: flex;
         align-items: center;
         gap: 90px;
+        @media (max-width: 1230px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__content {
         width: 510px;
         position: relative;
+        @media (max-width: 1230px) {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -23,7 +30,11 @@
     &__item {
         margin-bottom: 25px;
         width: 285px;
-        ///cursor: pointer;
+        @media (max-width: 1230px) {
+            width: 100%;
+            max-width: 600px;
+        }
+
         &:hover &-title {
             color: var(--hover-color);
         }
@@ -70,9 +81,30 @@
         align-items: center;
         justify-content: center;
         transition: all 0.3s ease;
+        @media (max-width: 1230px) {
+            pointer-events: none;
+        }
+        @media (max-width: 840px) {
+            bottom: auto;
+            top: -350px;
+        }
+        @media (max-width: 500px) {
+            width: 170px;
+            height: 168px;
+            background-size: cover;
+            top: -185px;
+        }
+
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
+        }
+    }
+
+    &__img {
+        @media (max-width: 1230px) {
+            order: -1;
+            max-width: 100%;
         }
     }
 }
