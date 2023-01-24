@@ -109,6 +109,11 @@ img {
   border: none;
   cursor: pointer;
 }
+.header__btn:hover {
+  color: var(--font-color);
+  background-color: var(--hover-color2);
+  border-color: var(--hover-color2);
+}
 .header__content {
   min-height: calc(100vh - 161px);
   display: flex;
@@ -259,6 +264,19 @@ img {
   padding-top: 12px;
   display: block;
   color: var(--font-color2);
+  transition: color 0.3s;
+}
+.popup-btn path, .popup-btn circle {
+  transition: all 0.3s;
+}
+.popup-btn:hover span {
+  color: var(--hover-color);
+}
+.popup-btn:hover path {
+  fill: var(--hover-color2);
+}
+.popup-btn:hover circle {
+  stroke: var(--hover-color2);
 }
 
 .buy {
@@ -502,6 +520,15 @@ img {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+}
+.footer__logo {
+  align-self: flex-start;
+}
+.footer__logo path {
+  transition: fill 0.3s;
+}
+.footer__logo:hover path {
+  fill: var(--hover-color);
 }
 
 .container {

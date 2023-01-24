@@ -61,4 +61,15 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__logo {
+        align-self: flex-start;
+    }
+
+    &__logo path {
+        transition: fill 0.3s;
+    }
+    &__logo:hover path {
+        fill: var(--hover-color);
+    }
 }

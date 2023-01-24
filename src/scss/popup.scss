@@ -9,5 +9,20 @@
         padding-top: 12px;
         display: block;
         color: var(--font-color2);
+        transition: color 0.3s;
+    }
+    & path,
+    & circle {
+        transition: all 0.3s;
+    }
+
+    &:hover span {
+        color: var(--hover-color);
+    }
+    &:hover path {
+        fill: var(--hover-color2);
+    }
+    &:hover circle {
+        stroke: var(--hover-color2);
     }
 }
