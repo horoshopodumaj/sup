@@ -25,6 +25,10 @@
     &__title {
         max-width: 470px;
         margin-bottom: 62px;
+        @media (max-width: 414px) {
+            font-size: 32px !important;
+            line-height: 36px !important;
+        }
     }
 
     &__list {
